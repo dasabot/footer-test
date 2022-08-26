@@ -1,0 +1,165 @@
+// @font-face {
+//   font-family: 'avenir_next_lt_proregular';
+//   src: url('src/fonts/Avenir Next LT Pro Regular/Avenir Next LT Pro Regular.otf') format('otf');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  background-color: #4871D9;
+  margin: 0 auto;
+  display: flex;
+
+  &_desktop {
+    padding: 50px 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .footer-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .nav-links-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-links-group__header {
+      color: white;
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 15px;
+    }
+
+    .nav-links-group__link {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 5px;
+    }
+
+    .legal-text {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      text-align: center;
+      margin-top: 70px;
+    }
+  }
+
+  &_mobile {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer-wrapper {
+      display: flex;
+      flex-direction: column;
+      text-transform: lowercase;
+      color: white;
+      width: 100%;
+    }
+
+    .nav-links-group__header {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .nav-links-group__link {
+      font-weight: 900;
+      line-height: 19px;
+      padding: 15px 0;
+      border-bottom: 1px solid white;
+
+      &:first-of-type {
+        padding: 0;
+      }
+    }
+
+    .nav-links-group__open-btn {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 15px 0;
+      border-bottom: 1px solid white;
+      font-weight: 900;
+      line-height: 19px;
+      padding-right: 10px;
+    }
+
+    .nav-links-group__list {
+      list-style-type: none;
+      padding-left: 20px;
+
+      .nav-links-group__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        margin-bottom: 20px;
+        border: 0;
+      }
+    }
+
+    .nav-links-group__list-item {
+      margin-bottom: 20px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .legal-text {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 17px;
+
+      & p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.nav-links-group__link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  &__element {
+    margin-right: 20px;
+  }
+}
+
+.legal-text {
+  color: white;
+  text-align: center;
+}
